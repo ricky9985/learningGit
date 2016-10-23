@@ -2,9 +2,14 @@
 * Style tweaks
 * --------------------------------------------------
 */
+
+
+
+
+
 html,
 body {
-    overflow-x: hidden; /* Prevent scroll on narrow devices */
+     /* Prevent scroll on narrow devices */
 }
 body {
     padding-top: 100px;
@@ -16,7 +21,12 @@ footer {
 /*
  * Custom styles
  */
-.navbar-brand {
+
+ .affix{
+   top:80px;
+ }
+
+ .navbar-brand {
     font-size: 24px;
 }
 

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <head>
     <title>Home Page</title>
-    <script type="text/javascript" src="../js/custom.js"></script>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/master.css" media="screen" title="no title">
-
-
-    <header></header>
-
+    <script type="text/javascript" src="../js/custom.js"></script>
 </head>
 <body>
+
     <nav id="header" class="navbar navbar-fixed-top">
         <div id="header-container" class="container navbar-container">
             <div class="navbar-header">
@@ -39,9 +38,19 @@
         </div>
         <!-- /.container -->
     </nav>
+    <!-- /.navbar -->
+
     <div class="container">
 
-        <div class="row row-offcanvas row-offcanvas-right">
+        <div class="row">
+
+          <nav class="col-sm-3">
+    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="70">
+      <li class="active"><a href="#section1">Section 1</a></li>
+      <li><a href="#section2">Section 2</a></li>
+      <li><a href="#section3">Section 3</a></li>
+    </ul>
+  </nav>
 
             <div class="col-xs-12 col-sm-9">
                 <p class="pull-right visible-xs">
@@ -52,6 +61,7 @@
                     <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
                 </div>
                 <div class="row">
+
                     <div class="col-xs-6 col-lg-4">
                         <h2>Heading</h2>
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
@@ -111,32 +121,19 @@
             </div>
             <!--/.col-xs-12.col-sm-9-->
 
-            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-                <div class="list-group">
-                    <a href="#" class="list-group-item active">Link</a>
-                    <a href="#" class="list-group-item">Link</a>
-                    <a href="#" class="list-group-item">Link</a>
-                    <a href="#" class="list-group-item">Link</a>
-                    <a href="#" class="list-group-item">Link</a>
-                </div>
-                <!--/.sidebar-offcanvas-->
-            </div>
-            <!--/row-->
-
-            <hr>
-
-            <footer>
-                <p>© Company 2014</p>
-            </footer>
+            <!--/.sidebar-offcanvas-->
 
         </div>
-        <!--/.container-->
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
+        <!--/row-->
+
+        <hr>
+
+        <footer>
+            <p>© Company 2014</p>
+        </footer>
+
     </div>
+    <!--/.container-->
 
 </body>
 </html>
