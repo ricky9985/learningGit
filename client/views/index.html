@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../css/master.css" media="screen" title="no title">
     <script type="text/javascript" src="../js/custom.js"></script>
 </head>
-<body>
 
+<body>
+<!-- yeh top wala navbar hai. fixed hai -->
     <nav id="header" class="navbar navbar-fixed-top">
         <div id="header-container" class="container navbar-container">
             <div class="navbar-header">
@@ -27,7 +28,10 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#account">Account Settings</a>
+                    </li>
+                    <li>
+                        <a href="#notifications">Notifiactions</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -39,101 +43,115 @@
         <!-- /.container -->
     </nav>
     <!-- /.navbar -->
-
+<!-- container mein chod hai. xs mein side bar ki adjustments karni padegi nahi toh fit nahi aayega. container fluid karke -->
     <div class="container">
-
         <div class="row">
-
-          <nav class="col-sm-3">
-    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="70">
-      <li class="active"><a href="#section1">Section 1</a></li>
-      <li><a href="#section2">Section 2</a></li>
-      <li><a href="#section3">Section 3</a></li>
-    </ul>
-  </nav>
-
-            <div class="col-xs-12 col-sm-9">
-                <p class="pull-right visible-xs">
-                    <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-                </p>
-                <div class="jumbotron">
-                    <h1>Hello, world!</h1>
-                    <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
-                </div>
-                <div class="row">
-
-                    <div class="col-xs-6 col-lg-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                        </p>
-                        <p>
-                            <a class="btn btn-default" href="#" role="button">View details »</a>
-                        </p>
+            <nav class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="70">
+                    <li >
+                        <a href="#drop_down_menu" data-toggle="collapse">Section 1</a>
+                    </li>
+                    <!-- collapse better laga instead of dropdown  -->
+                    <div class="collapse" id="drop_down_menu">
+                        <ul>
+                            <li>Link1</li>
+                            <li>Link2</li>
+                            <li>Link3</li>
+                        </ul>
                     </div>
-                    <!--/.col-xs-6.col-lg-4-->
-                    <div class="col-xs-6 col-lg-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                        </p>
-                        <p>
-                            <a class="btn btn-default" href="#" role="button">View details »</a>
-                        </p>
-                    </div>
-                    <!--/.col-xs-6.col-lg-4-->
-                    <div class="col-xs-6 col-lg-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                        </p>
-                        <p>
-                            <a class="btn btn-default" href="#" role="button">View details »</a>
-                        </p>
-                    </div>
-                    <!--/.col-xs-6.col-lg-4-->
-                    <div class="col-xs-6 col-lg-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                        </p>
-                        <p>
-                            <a class="btn btn-default" href="#" role="button">View details »</a>
-                        </p>
-                    </div>
-                    <!--/.col-xs-6.col-lg-4-->
-                    <div class="col-xs-6 col-lg-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                        </p>
-                        <p>
-                            <a class="btn btn-default" href="#" role="button">View details »</a>
-                        </p>
-                    </div>
-                    <!--/.col-xs-6.col-lg-4-->
-                    <div class="col-xs-6 col-lg-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                        </p>
-                        <p>
-                            <a class="btn btn-default" href="#" role="button">View details »</a>
-                        </p>
-                    </div>
-                    <!--/.col-xs-6.col-lg-4-->
-                </div>
-                <!--/row-->
+                <li>
+                    <a href="#section2">Section 2</a>
+                </li>
+                <li>
+                    <a href="#section3">Section 3</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="col-xs-12 col-sm-9">
+            <p class="pull-right visible-xs">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+            </p>
+            <div class="jumbotron">
+                <h1>Hello, world!</h1>
+                <p>Hi {{user.username}},<br> </p>
+                Do you want to create an expense?
+                <br> Do you want to add a contact?<br>
+                
             </div>
-            <!--/.col-xs-12.col-sm-9-->
+            <div class="row">
 
-            <!--/.sidebar-offcanvas-->
-
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="#" role="button">View details »</a>
+                    </p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="#" role="button">View details »</a>
+                    </p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="#" role="button">View details »</a>
+                    </p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="#" role="button">View details »</a>
+                    </p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="#" role="button">View details »</a>
+                    </p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="#" role="button">View details »</a>
+                    </p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+            </div>
+            <!--/row-->
         </div>
-        <!--/row-->
+        <!--/.col-xs-12.col-sm-9-->
 
-        <hr>
-
-        <footer>
-            <p>© Company 2014</p>
-        </footer>
+        <!--/.sidebar-offcanvas-->
 
     </div>
-    <!--/.container-->
+    <!--/row-->
+
+    <hr>
+
+    <footer>
+        <p>&copy; Company 2014</p>
+    </footer>
+
+</div>
+<!--/.container-->
 
 </body>
 </html>
