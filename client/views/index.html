@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<!-- yeh top wala navbar hai. fixed hai -->
+    <!-- yeh top wala navbar hai. fixed hai -->
     <nav id="header" class="navbar navbar-fixed-top">
         <div id="header-container" class="container navbar-container">
             <div class="navbar-header">
@@ -43,7 +43,7 @@
         <!-- /.container -->
     </nav>
     <!-- /.navbar -->
-<!-- container mein chod hai. xs mein side bar ki adjustments karni padegi nahi toh fit nahi aayega. container fluid karke -->
+    <!-- container mein chod hai. xs mein side bar ki adjustments karni padegi nahi toh fit nahi aayega. container fluid karke -->
     <div class="container">
         <div class="row">
             <nav class="col-sm-3">
@@ -71,12 +71,16 @@
             <p class="pull-right visible-xs">
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
             </p>
+            <!-- still to be decided. -->
             <div class="jumbotron">
                 <h1>Hello, world!</h1>
-                <p>Hi {{user.username}},<br> </p>
+                <p>Hi
+                    {{user.username}},<br>
+                </p>
                 Do you want to create an expense?
-                <br> Do you want to add a contact?<br>
-                
+                <br>
+                Do you want to add a contact?<br>
+
             </div>
             <div class="row">
 
